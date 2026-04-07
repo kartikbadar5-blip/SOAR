@@ -1,1 +1,3 @@
-
+index=botsv3 source IN ("WinEventLog:Security") EventCode IN (4625, 4624)
+| stats dc(Account_Name) as distinct_users count as attempts by ComputerName
+| where distinct_users > 8
