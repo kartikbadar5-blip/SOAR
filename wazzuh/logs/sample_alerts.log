@@ -1,1 +1,17 @@
+** Alert 1712563200.12345: - authentication_failed
+2026 Apr 08 10:15:21 ubuntu->sshd
+Rule: 5710 (level 5) -> 'Multiple authentication failures'
+Src IP: 192.168.1.101
+User: admin
 
+** Alert 1712563260.54321: - brute_force
+2026 Apr 08 10:16:10 ubuntu->sshd
+Rule: 5712 (level 10) -> 'SSHD brute force attack detected'
+Src IP: 192.168.1.101
+User: root
+
+** Alert 1712563320.67890: - login_failed
+2026 Apr 08 10:17:05 ubuntu->sshd
+Rule: 5503 (level 3) -> 'Login failed'
+Src IP: 192.168.1.101
+User: guest
